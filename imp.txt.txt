@@ -1,0 +1,3 @@
+<FileBase
+        multiple={ false }
+        onDone={ ({ base64 }) => setItem({ ...item, image: base64 })} />
