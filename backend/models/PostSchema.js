@@ -9,6 +9,7 @@ const PostSchema=new mongoose.Schema({
         type:Number,
         default:0
     },
+    postType:String,
 })
 
 const collection=mongoose.model("postcollection",PostSchema)

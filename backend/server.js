@@ -99,14 +99,15 @@ app.post("/signup", async(req,res)=>{
 
 
 app.post("/post", async(req,res)=>{
-    const {image, title, message, tags, likeCount}=req.body
-    console.log("post")
+    const {image, title, message, tags, likeCount, postType}=req.body
+    console.log(postType)
     const data={
         image:image,
         title:title,
         message:message,
         tags:tags,
-        likeCount:likeCount
+        likeCount:likeCount,
+        postType:postType
     }
     
     try{
